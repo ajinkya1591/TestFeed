@@ -2,7 +2,6 @@
 //  RemoteFeedLoaderTests.swift
 //  FeedTests
 //
-//  Created by Ajinkya More on 19/12/22.
 //
 
 import Foundation
