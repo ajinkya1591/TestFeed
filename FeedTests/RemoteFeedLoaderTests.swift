@@ -45,6 +45,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     func testDoesNotRequestDataFromURL() {
         let client = HTTPClientSpy()
+        HTTPClient.shared = client
         _ = RemoteFeedLoader()
         XCTAssertNil(client.requestedURL)
     }
