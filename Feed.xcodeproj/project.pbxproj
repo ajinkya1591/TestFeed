@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B794BF429BF9FF400DE7AD8 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B794BF329BF9FF400DE7AD8 /* RemoteFeedLoader.swift */; };
 		4BF2F459294C4A27002520F8 /* Feed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4BF2F458294C4A27002520F8 /* Feed.docc */; };
 		4BF2F45F294C4A28002520F8 /* Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2F454294C4A27002520F8 /* Feed.framework */; };
 		4BF2F464294C4A28002520F8 /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF2F463294C4A28002520F8 /* FeedTests.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B794BF329BF9FF400DE7AD8 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		4BF2F454294C4A27002520F8 /* Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF2F457294C4A27002520F8 /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		4BF2F458294C4A27002520F8 /* Feed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Feed.docc; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B794BF229BF9FD000DE7AD8 /* FeedAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4B794BF329BF9FF400DE7AD8 /* RemoteFeedLoader.swift */,
+			);
+			path = FeedAPI;
+			sourceTree = "<group>";
+		};
 		4BF2F44A294C4A27002520F8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 			children = (
 				4BF2F457294C4A27002520F8 /* Feed.h */,
 				4BF2F458294C4A27002520F8 /* Feed.docc */,
+				4B794BF229BF9FD000DE7AD8 /* FeedAPI */,
 				4BF2F47229507700002520F8 /* Feed Feature */,
 			);
 			path = Feed;
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B794BF429BF9FF400DE7AD8 /* RemoteFeedLoader.swift in Sources */,
 				4BF2F471295075CC002520F8 /* FeedLoader.swift in Sources */,
 				4BF2F46F295074F2002520F8 /* FeedItem.swift in Sources */,
 				4BF2F459294C4A27002520F8 /* Feed.docc in Sources */,
