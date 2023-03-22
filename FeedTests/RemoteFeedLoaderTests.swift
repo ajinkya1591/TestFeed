@@ -12,16 +12,14 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     func test_init_doesNotRequestDataFromURL() {
         let (_, client) = makeSUT()
-        XCTAssertNil(client.requestedURL)
+        XCTAssertTrue(client.requestedURLs.isEmpty)
     }
     
     func test_loadTwice_requestsDataFromURL() {
         let url = URL(string: "www.goggle.co")!
         let (make, client) = makeSUT(url: url)
         make.load()
-        make.load()
-        XCTAssertEqual(client.requestedURL, url)
-        XCTAssertEqual(client.requestedURLs, [url, url])
+        XCTAssertEqual(client.requestedURLs, [url])
     }
     
     // MARK: Helpers
@@ -32,12 +30,9 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     private class HTTPClientSpy: HTTPClient {
-        
-        var requestedURL: URL?
         var requestedURLs = [URL]()
         
         func getURL(url: URL) {
-            self.requestedURL = url
             self.requestedURLs.append(url)
         }
     }
